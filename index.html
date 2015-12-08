@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAW-DATA Compilation</title>
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<script src = "lib/jquery.js"></script>
+	<script src = "lib/js/bootstrap.js"></script>
+</head>
+<body onload = "init()">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Adrenaline Database</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class = "active"><a href="index.html">Home</a></li>
+            <li><a href="results.php">View</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    <!--Begin Jumbo-->
+    <div class="jumbotron" style = "text-align:center;margin-top: 30px">
+	    <h1>Adrenaline: Management</h1>
+	    <p>Simply input the information from the customers Messecard. If you would like to view any past entries, then you can select the <i><b>View</b></i> button.</p>
+	</div>
+	<!--Let's get this party started!-->
+	<div class = "container">
+  <form method = "POST" action = "purchase.php">
+    <div class="form-group">
+      <table class="table">
+      <thead>
+        <tr>
+          <th>Package 01</th>
+          <th>Package 02</th>
+          <th>Package 03</th>
+          <th>Package 04</th>
+          <th>Package 05</th>
+          <th>Package 06</th>
+          <th>Package 07</th>
+          <th>Package 08</th>
+        </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p1" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p2" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p3" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p4" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p5" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p6" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p7" value="1"></label></td>
+              <td><label class="checkbox-inline"><input style = "margin-left:auto;margin-right:auto;" type="checkbox" name = "p8" value="1"></label></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  <div class="form-group">
+    <label for="CardNum">Messecard Number</label>
+    <input type="number" name = "number" class="form-control" id="CardNum" placeholder="Card Number">
+  </div>
+  <hr />
+    <div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" name = "fname" class="form-control" id="fname" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name</label>
+    <input type="text" name = "lname" class="form-control" id="lname" placeholder="Last Name">
+  </div>
+  <hr/>
+  <div class="form-group">
+    <label for="lname">Firm Name</label>
+    <input type="text" name = "firm" class="form-control" id="lname" placeholder="Firm Name">
+  </div>
+  <input type="submit" value = "Submit" class="btn btn-default">
+</form>
+<hr />
+</div>
+      <footer class="footer">
+            <div class="container">
+              <p id = "Footer" class="foot text-muted">Adrenaline: Site by Tanner McKamey</p>
+            </div>
+      </footer>
+</body>
+</html>
